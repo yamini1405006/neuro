@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheels on Demand - Categories</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #E6E6FA;
+        }
+        .category-card {
+            transition: all 0.3s ease;
+        }
+        .category-card:hover {
+            transform: translateY(-5px) scale(1.02);
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#8A2BE2',secondary:'#E6E6FA'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="#" class="text-3xl font-['Pacifico'] text-primary">Wheels on Demand</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-800 hover:text-primary font-medium">Home</a>
+                <a href="#" class="text-primary font-medium border-b-2 border-primary">Categories</a>
+                <a href="#" class="text-gray-800 hover:text-primary font-medium">About Us</a>
+                <a href="#" class="text-gray-800 hover:text-primary font-medium">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary">
+                    <i class="ri-search-line ri-lg"></i>
+                </button>
+                <button class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary">
+                    <i class="ri-user-line ri-lg"></i>
+                </button>
+                <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-secondary to-purple-100 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Find Your Perfect Wheels</h1>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
+                Explore our exclusive categories and discover the perfect vehicle for your needs, budget, and style.
+            </p>
+           
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Vehicle Categories</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    We offer a wide range of vehicles to suit every need and budget. Explore our categories and find the perfect match for your journey.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Supreme Category -->
+                <div class="category-card bg-white rounded-lg shadow-lg overflow-hidden border-2 border-primary">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="C:\Users\Kajal\OneDrive\Desktop\neuronova\neuro\supreme.jpg"> 
+                             alt="Supreme Category" 
+                             class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+                        <div class="absolute top-0 right-0 bg-primary text-white px-4 py-2 rounded-bl-lg font-semibold">
+                            Supreme
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Supreme Collection</h3>
+                        <p class="text-gray-600 mb-4">
+                            Experience unparalleled luxury with our Supreme collection featuring top-tier vehicles with premium features, exceptional performance, and exclusive benefits.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-primary px-3 py-1 rounded-full text-sm font-medium">Luxury Sedans</span>
+                            <span class="bg-purple-100 text-primary px-3 py-1 rounded-full text-sm font-medium">Sports Cars</span>
+                            <span class="bg-purple-100 text-primary px-3 py-1 rounded-full text-sm font-medium">Premium SUVs</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-900 font-bold">Starting from $299/day</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-button font-medium hover:bg-opacity-90 whitespace-nowrap">
+                                Explore Supreme
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Category -->
+                <div class="category-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="C:\Users\Kajal\OneDrive\Desktop\neuronova\neuro\premium.jpg">
+                             alt="Premium Category" 
+                             class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+                        <div class="absolute top-0 right-0 bg-purple-600 text-white px-4 py-2 rounded-bl-lg font-semibold">
+                            Premium
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Premium Selection</h3>
+                        <p class="text-gray-600 mb-4">
+                            Enjoy superior comfort and style with our Premium selection offering high-quality vehicles with excellent features, reliable performance, and great value.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-medium">Mid-size Sedans</span>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-medium">Crossovers</span>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-medium">Compact SUVs</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-900 font-bold">Starting from $149/day</span>
+                            <button class="bg-purple-600 text-white px-4 py-2 rounded-button font-medium hover:bg-opacity-90 whitespace-nowrap">
+                                Explore Premium
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Local Category -->
+                <div class="category-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="C:\Users\Kajal\OneDrive\Desktop\neuronova\neuro\local.jpg">
+                             alt="Local Category" 
+                             class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105">
+                        <div class="absolute top-0 right-0 bg-purple-500 text-white px-4 py-2 rounded-bl-lg font-semibold">
+                            Local
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Local Favorites</h3>
+                        <p class="text-gray-600 mb-4">
+                            Find practical and affordable options in our Local collection featuring reliable vehicles with essential features, good fuel efficiency, and budget-friendly rates.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-500 px-3 py-1 rounded-full text-sm font-medium">Economy Cars</span>
+                            <span class="bg-purple-100 text-purple-500 px-3 py-1 rounded-full text-sm font-medium">Hatchbacks</span>
+                            <span class="bg-purple-100 text-purple-500 px-3 py-1 rounded-full text-sm font-medium">Compact Cars</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-900 font-bold">Starting from $79/day</span>
+                            <button class="bg-purple-500 text-white px-4 py-2 rounded-button font-medium hover:bg-opacity-90 whitespace-nowrap">
+                                Explore Local
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose Our Categories</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    We've carefully curated our vehicle categories to ensure you find exactly what you need for any occasion.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 flex items-center justify-center bg-purple-100 text-primary rounded-full mx-auto mb-4">
+                        <i class="ri-shield-check-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Quality Assured</h3>
+                    <p class="text-gray-600">
+                        All vehicles undergo rigorous inspection and maintenance before every rental.
+                    </p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 flex items-center justify-center bg-purple-100 text-primary rounded-full mx-auto mb-4">
+                        <i class="ri-money-dollar-circle-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Transparent Pricing</h3>
+                    <p class="text-gray-600">
+                        No hidden fees or surprises. What you see is what you pay.
+                    </p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 flex items-center justify-center bg-purple-100 text-primary rounded-full mx-auto mb-4">
+                        <i class="ri-customer-service-2-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">24/7 Support</h3>
+                    <p class="text-gray-600">
+                        Our customer service team is available around the clock to assist you.
+                    </p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 flex items-center justify-center bg-purple-100 text-primary rounded-full mx-auto mb-4">
+                        <i class="ri-roadster-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Flexible Options</h3>
+                    <p class="text-gray-600">
+                        Choose from daily, weekly, or monthly rentals with flexible pickup and return.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Vehicles Section -->
+    <section class="py-16 bg-secondary bg-opacity-30">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Popular Vehicles in Each Category</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Discover our most requested vehicles that customers love in each category.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Supreme Popular Vehicle -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 overflow-hidden">
+                        <img src="C:\Users\Kajal\OneDrive\Desktop\neuronova\neuro\Mercedes-Benz S-Class.jpg">
+                             alt="Mercedes-Benz S-Class" 
+                             class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Mercedes-Benz S-Class</h3>
+                            <span class="bg-primary text-white px-2 py-1 rounded text-xs font-medium">Supreme</span>
+                        </div>
+                        <div class="flex items-center text-yellow-400 mb-2">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <span class="text-gray-600 ml-2 text-sm">4.9 (128 reviews)</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Luxury Sedan</span>
+                            <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">5 Seats</span>
+                            <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Automatic</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-900 font-bold">$349/day</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-opacity-90 whitespace-nowrap">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Popular Vehicle -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 overflow-hidden">
+                        <img src="C:\Users\Kajal\OneDrive\Desktop\neuronova\neuro\bmw series 5.jpg">
+                             alt="BMW 5 Series" 
+                             class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">BMW 5 Series</h3>
+                            <span class="bg-purple-600 text-white px-2 py-1 rounded text-xs font-medium">Premium</span>
+                        </div>
+                        <div class="flex items-center text-yellow-400 mb-2">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-fill"></i>
+                            <span class="text-gray-600 ml-2 text-sm">4.7 (96 reviews)</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Mid-size Sedan</span>
+                            <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">5 Seats</span>
+                            <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Automatic</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-900 font-bold">$189/day</span>
+                            <button class="bg-purple-600 text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-opacity-90 whitespace-nowrap">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Local Popular Vehicle -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 overflow-hidden">
+                        <img src="C:\Users\Kajal\OneDrive\Desktop\neuronova\neuro\toyota carolla.png">
+                             alt="Toyota Corolla" 
+                             class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Toyota Corolla</h3>
+                            <span class="bg-purple-500 text-white px-2 py-1 rounded text-xs font-medium">Local</span>
+                        </div>
+                        <div class="flex items-center text-yellow-400 mb-2">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-line"></i>
+                            <span class="text-gray-600 ml-2 text-sm">4.2 (154 reviews)</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Compact Sedan</span>
+                            <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">5 Seats</span>
+                            <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Automatic</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-900 font-bold">$89/day</span>
+                            <button class="bg-purple-500 text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-opacity-90 whitespace-nowrap">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

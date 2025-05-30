@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wheels on Demand</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #b082ae;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #9E7BB5;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4f4f4;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        main:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #9E7BB5;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        /* Contact Information */
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .contact-info div {
+            width: 48%;
+        }
+
+        .contact-info img {
+            width: 100%;
+            border-radius: 8px;
+            height: 120%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Contact Form */
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #9E7BB5;
+            outline: none;
+        }
+
+        .contact-form button {
+            padding: 12px;
+            background-color: #9E7BB5;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #7a5f8e;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #9E7BB5;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            border-radius: 8px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-info div {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                font-size: 0.9rem;
+            }
+
+            .contact-form button {
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wheels on Demand</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <div>
+                <h2>Contact Information</h2>
+                <p>We're here to assist you. Reach out to us through any of the following channels:</p>
+                <ul>
+                    <li><strong>Phone:</strong> +91 123 456 7890</li>
+                    <li><strong>Email:</strong> contact@wheelsondemand.com</li>
+                    <li><strong>Address:</strong> 123, Vehicle Lane, Ahmedabad, Gujarat, India</li>
+                </ul>
+            </div>
+            <div>
+                <img src="C:\Users\Kajal\OneDrive\Desktop\neuronova\neuro\offi.jpg" alt="Car Rental Office">
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" cols="40" placeholder="Type your message here..."></textarea>
+                <input type="submit" value="Send">
+            </body>
+            </html>

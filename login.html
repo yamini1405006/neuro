@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up - Vehicle Rental Service</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f9f0ff;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Background Image with Light Transparency */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/1200x800.png?text=Our+Fleet+of+Vehicles');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #6a4c9c;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #6a4c9c;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #6a4c9c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #5a3c8d;
+        }
+
+        .form-group a {
+            color: #6a4c9c;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .form-group a:hover {
+            text-decoration: underline;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .form-container > div {
+            flex: 1;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container > div h2 {
+            text-align: center;
+            color: #6a4c9c;
+            margin-bottom: 20px;
+        }
+
+        .form-container > div .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-container > div .form-group input[type="submit"] {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .form-container > div {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to Our Vehicle Rental Service</h1>
+
+        <div class="form-container">
+            <!-- Login Form -->
+            <div id="login-form">
+                <h2>Login</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" name="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" name="login-password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Login">
+                    </div>
+                </form>
+                <div class="form-group">
+                    <p>Don't have an account? <a href="#signup-form">Sign Up</a></p>
+                </div>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div id="signup-form">
+                <h2>Sign Up</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="signup-name">Full Name:</label>
+                        <input type="text" id="signup-name" name="signup-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email:</label>
+                        <input type="email" id="signup-email" name="signup-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password:</label>
+                        <input type="password" id="signup-password" name="signup-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-confirm-password">Confirm Password:</label>
+                        <input type="password" id="signup-confirm-password" name="signup-confirm-password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Sign Up">
+                    </div>
+                </form>
+                <div class="form-group">
+                    <p>Already have an account? <a href="#login-form">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Vehicle Rental Service</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f9f0ff;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Background Image with Light Transparency */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: ('bck2.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3; /* Adjust opacity for desired transparency */
+            z-index: -1; /* Ensure it stays behind the content */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: #6a4c9c;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            color: #9b7fbb;
+            font-size: 1.2rem;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #6a4c9c;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .values, .approach {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .value, .approach-item {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 45%;
+            margin: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .value h3, .approach-item h3 {
+            color: #6a4c9c;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .value p, .approach-item p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Vehicle Rental Service</h1>
+        <p>Your trusted partner for reliable and affordable vehicle rentals.</p>
+    </header>
+
+    <section class="image-container">
+        <img src="C:\Users\Kajal\OneDrive\Desktop\neuronova\neuro\auf.jpg" alt="Our Fleet">
+    </section>
+
+    <section class="values">
+        <h2>Our Core Values</h2>
+        <div class="value">
+            <h3>Reliability</h3>
+            <p>We ensure that all our vehicles are well-maintained and ready for your journey.</p>
+        </div>
+        <div class="value">
+            <h3>Affordability</h3>
+            <p>Offering competitive pricing without compromising on quality or service.</p>
+        </div>
+        <div class="value">
+            <h3>Customer Satisfaction</h3>
+            <p>Your comfort and satisfaction are our top priorities in every rental experience.</p>
+        </div>
+        <div class="value">
+            <h3>Transparency</h3>
+            <p>Clear and honest communication in all our dealings and services.</p>
+        </div>
+    </section>
+
+    <section class="approach">
+        <h2>Our Approach</h2>
+        <div class="approach-item">
+            <h3>Easy Booking</h3>
+            <p>Our user-friendly online platform allows you to book a vehicle in just a few clicks.</p>
+        </div>
+        <div class="approach-item">
+            <h3>Flexible Options</h3>
+            <p>Choose from a wide range of vehicles to suit your specific needs and preferences.</p>
+        </div>
+        <div class="approach-item">
+            <h3>24/7 Support</h3>
+            <p>Our dedicated support team is available around the clock to assist you with any queries.</p>
+        </div>
+        <div class="approach-item">
+            <h3>Convenient Delivery</h3>
+            <p>We offer doorstep delivery and pick-up services for your convenience.</p>
+        </div>
+    </section>
+
+</body>
+</html>
